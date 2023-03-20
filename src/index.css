@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //color: #806d91;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  //border-bottom: 2px solid black;
+  /* border-radius: 5px; */
+  font: inherit;
+  font-size: 1.125rem;
+  /* padding: 0.25rem 0; */
+}
+
+.input-field:focus,
+.input-field:valid {
+  outline: 0;
+  /* border-bottom-color: #6658d3; */
+}
+
+.relative:focus-within .input-label,
+.relative .input-field:focus + .input-label,
+.relative .input-field:valid + .input-label {
+  transform: translateY(-10px);
+  font-size: 0.875rem;
+  color: #1175ca;
+}
+
+.iti {
+  padding-left: 10px;
+}
+
+.iti__flag-container {
+  width: 110px;
+}
